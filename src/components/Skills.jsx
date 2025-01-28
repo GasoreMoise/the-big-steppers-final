@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaCode, FaLanguage, FaReact } from 'react-icons/fa';
+import { FaCode, FaLanguage, FaReact, FaCertificate } from 'react-icons/fa';
 
 const Skills = () => {
   const [ref, inView] = useInView({
