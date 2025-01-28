@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaGraduationCap, FaBook, FaAward, FaCalendar, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaGraduationCap, FaBook, FaAward } from 'react-icons/fa';
 
 const Education = () => {
   const [ref, inView] = useInView({
