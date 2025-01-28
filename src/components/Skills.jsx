@@ -1,14 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { 
-  FaNetworkWired, 
-  FaCode, 
-  FaServer, 
-  FaTools, 
-  FaLanguage,
-  FaCertificate,
-  FaReact
-} from 'react-icons/fa';
+import { FaCode, FaLanguage, FaReact } from 'react-icons/fa';
 
 const Skills = () => {
   const [ref, inView] = useInView({
@@ -84,6 +76,20 @@ const Skills = () => {
       description: "2019 Finalist"
     }
   ];
+
+  const renderAchievements = () => (
+    <div className="mt-12">
+      <h3 className="text-2xl font-bold text-white mb-6">Achievements</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {achievements.map((achievement, index) => (
+          <div key={index} className="bg-[#2a2a2a] p-4 rounded-lg">
+            <h4 className="text-amber-500 font-bold">{achievement.title}</h4>
+            <p className="text-gray-400">{achievement.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 
   return (
     <section className="py-24 bg-[#1a1a1a]" ref={ref}>
@@ -167,6 +173,8 @@ const Skills = () => {
             ))}
           </div>
         </motion.div>
+
+        {renderAchievements()}
       </div>
     </section>
   );

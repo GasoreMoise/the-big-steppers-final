@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaCalendar, FaTag, FaClock, FaArrowRight } from 'react-icons/fa';
+import { FaCalendar, FaClock, FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 
